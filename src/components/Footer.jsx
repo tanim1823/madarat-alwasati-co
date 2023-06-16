@@ -185,8 +185,11 @@ const Footer = () => {
             <div className="column col-md-6 col-sm-6 col-xs-12 ">
               <ul className="footer-nav text-secondary">
                 <li
+                  style={{
+                    marginLeft: "90%",
+                  }}
                   onClick={scrollTop}
-                  className="icon fa fa-long-arrow-up  border px-2 rounded bg-warning "
+                  className="icon fa fa-long-arrow-up mt-2  border px-2 rounded bg-warning "
                 ></li>
                 {/* <li>
                   <a>Acces Webmail</a>
@@ -202,6 +205,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
+      {/* <div className="scroll-to-top scroll-to-target bg-light" data-target="html"><span className="icon fa fa-long-arrow-up"></span></div> */}
     </>
   );
 };

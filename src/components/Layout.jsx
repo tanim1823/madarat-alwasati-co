@@ -167,16 +167,8 @@ const Layout = ({ children }) => {
       {children}
       <LogoSlider data={clients} text={"Our Happy Clients"} />
       <LogoSlider data={partners} text={"Our Partners"} />
-      <Subscriber />
-      {/* <div style={} className="">
-        <span className=""></span>
-      </div> */}
-      <Footer />
-      {/* Scroll to top */}
 
-      {/* <div className="ml-4">
-        <span className="icon fa fa-long-arrow-up bg-light"></span>
-      </div> */}
+      <Footer />
     </>
   );
 };
