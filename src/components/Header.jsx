@@ -12,7 +12,7 @@ const Header = () => {
     <nav className="navbar fixed-top navbar-dark navbar-expand-md bg-dark fixed-top">
       <div className="container-fluid">
         <span>
-          <Link className="navbar-brand" to="/">
+          <Link onclick={scrollTop}  className="navbar-brand" to="/">
             <img
               src={logo}
               alt=""
