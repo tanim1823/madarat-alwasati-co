@@ -1,6 +1,13 @@
 import { Link } from "react-router-dom";
 import logo from "../assets/images/logo.png";
 const Header = () => {
+    const scrollTop = () => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "smooth",
+    });
+  };
   return (
     <nav className="navbar fixed-top navbar-dark navbar-expand-md bg-dark fixed-top">
       <div className="container-fluid">
@@ -44,12 +51,12 @@ const Header = () => {
           </div>
           <div className="offcanvas-body bg-dark">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-              <li className="nav-item" data-bs-dismiss="offcanvas">
+              <li onclick={scrollTop} className="nav-item" data-bs-dismiss="offcanvas">
                 <Link to={`/`} className="nav-link active" aria-current="page">
                   Home
                 </Link>
               </li>
-              <li className="nav-item dropdown">
+              <li onclick={scrollTop}  className="nav-item dropdown">
                 <Link
                   to={`/about`}
                   className="nav-link dropdown-toggle"
@@ -61,41 +68,41 @@ const Header = () => {
                   About Us
                 </Link>
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li data-bs-dismiss="offcanvas">
+                  <li onclick={scrollTop}  data-bs-dismiss="offcanvas">
                     <Link to={`/about`} className="dropdown-item">
                       About us
                     </Link>
                   </li>
                   <hr className="dropdown-divider" />
-                  <li data-bs-dismiss="offcanvas">
+                  <li onclick={scrollTop}  data-bs-dismiss="offcanvas">
                     <Link to={`/mission_vision`} className="dropdown-item">
                       Mission And Vision
                     </Link>
                   </li>
                   <li></li>
-                  <li data-bs-dismiss="offcanvas">
+                  <li onclick={scrollTop}  data-bs-dismiss="offcanvas">
                     <Link to={`/Protfolio`} className="dropdown-item">
                       Protfolio
                     </Link>
                   </li>
                 </ul>
               </li>
-              <li className="nav-item" data-bs-dismiss="offcanvas">
+              <li onclick={scrollTop}  className="nav-item" data-bs-dismiss="offcanvas">
                 <Link to={`/protfolio`} className="nav-link">
                   Protfolio
                 </Link>
               </li>
-              <li className="nav-item" data-bs-dismiss="offcanvas">
+              <li onclick={scrollTop}  className="nav-item" data-bs-dismiss="offcanvas">
                 <Link to={`/services`} className="nav-link">
                   Services
                 </Link>
               </li>
-              <li className="nav-item" data-bs-dismiss="offcanvas">
+              <li onclick={scrollTop}  className="nav-item" data-bs-dismiss="offcanvas">
                 <Link to={`/projects`} className="nav-link">
                   Projects
                 </Link>
               </li>
-              <li className="nav-item" data-bs-dismiss="offcanvas">
+              <li onclick={scrollTop}  className="nav-item" data-bs-dismiss="offcanvas">
                 <Link to={`/contract`} className="nav-link">
                   Contract Us
                 </Link>
