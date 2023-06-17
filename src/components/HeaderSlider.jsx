@@ -54,7 +54,7 @@ const Slider = () => {
             <div key={id} className={`carousel-item ${id === 0 && "active"}`}>
               <img src={data.url} className="d-block w-100" alt="..." />
               <div className="carousel-caption ">
-                <h2>{data.text1}</h2>
+                <h3>{data.text1}</h3>
                 <h5>{data.text2}</h5>
               </div>
             </div>
