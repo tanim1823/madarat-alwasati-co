@@ -9,7 +9,7 @@ const Projects = () => {
           <div className="row clearfix">
             {/*Title */}
             <div className="title-column col-md-6 col-sm-8 col-xs-12">
-              <h1>Projects</h1>
+              <h1>Our Projects</h1>
             </div>
             {/*Bread Crumb */}
             <div className="breadcrumb-column col-md-6 col-sm-4 col-xs-12">
